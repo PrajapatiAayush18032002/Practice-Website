@@ -29,8 +29,8 @@ body {
 }
 
 .div2 {
-    margin-right: 30px;
-    width: 30%;
+    margin-right: 10px;
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
@@ -136,7 +136,14 @@ a {
     color: #c61b21;
     font-weight: bold;
 }
-
+.dropdown .btn{
+    font-size: 18px;
+    padding: 0;
+    color: #000000;
+}
+.dropdown .btn:hover{
+    color: #c61b21;
+}
 
 @media(max-width: 992px) {
 
@@ -164,6 +171,7 @@ a {
     .nav.active {
         display: flex;
     }
+   
 }
 
 /* .headerbtn {
@@ -840,7 +848,7 @@ h4 {
 .text {
     /* border: 1px solid black; */
     margin: 0 auto;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
 }
 
@@ -891,4 +899,180 @@ h5 {
     }
 
 
+}
+
+/* ............Website Development Page StyleSheet ..............*/
+
+.WebDevbg {
+    min-height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(135, 76, 58, 0.55)), url(../img/web-devv.png);
+
+}
+
+.webbox {
+    padding: 15px;
+    text-align: center;
+    border: 1px dotted black;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(11, 120, 193, 0.3);
+    transition: .3s ease;
+}
+
+.round {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* background-color: #39bc99; */
+}
+
+.webbox:hover {
+    transform: translateY(-5px);
+}
+
+/* .round:hover{
+    background-color: #94c142;
+   
+} */
+.Web {
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18),
+        0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .webim {
+        margin-left: 130px;
+    }
+}
+
+/*.............. Application Development Service Page Css...................*/
+
+.AppDevbg {
+    min-height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(22, 8, 4, 0.55)), url(../img/App.png);
+
+}
+
+.Appbox {
+    padding: 15px;
+    text-align: center;
+    border: 1px dotted black;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(11, 120, 193, 0.3);
+    transition: .3s ease;
+}
+
+.round1 {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* background-color: #39bc99; */
+}
+
+.Appbox:hover {
+    transform: translateY(-5px);
+}
+
+.MobileApp {
+    min-height: 250px;
+    background-color: #dff4ff;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18),
+        0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+/*.............. Digital Marketing Service Page Css...................*/
+
+.Digitalbg {
+    min-height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(26, 25, 25, 0.55)), url(../img/DigitalMarketing.png);
+
+}
+
+.Digital {
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18),
+        0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .Digitalim {
+        margin-left: 90px;
+    }
+}
+
+.Digitalbox {
+    padding: 15px;
+    text-align: center;
+    border: 1px dotted black;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(11, 120, 193, 0.3);
+    transition: .3s ease;
+}
+
+.round2 {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* background-color: #39bc99; */
+}
+
+.Digitalbox:hover {
+    transform: translateY(-5px);
+}
+
+/* .dropdown-item{
+    display: none;
+} */
+
+/* Dropdown base */
+.service-dropdown {
+    position: relative;
+}
+
+/* Hide dropdown by default */
+.service-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 220px;
+    padding: 8px 0;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    z-index: 999;
+}
+
+/* Show dropdown on hover */
+.service-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown links */
+.service-dropdown .dropdown-item {
+    padding: 10px 18px;
+    font-size: 15px;
+    color: #000;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.service-dropdown .dropdown-item:hover {
+    background: #f5f5f5;
+    color: #e0262b;
+}
+
+/* Services button hover color */
+.service-dropdown:hover .dropdown-toggle {
+    color: #e0262b;
 }
